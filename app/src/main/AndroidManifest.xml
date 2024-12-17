@@ -16,6 +16,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".SeptimoServicio"
+            android:exported="false" />
+        <activity
+            android:name=".SextoServicio"
+            android:exported="false" />
+        <activity
+            android:name=".QuintoServicio"
+            android:exported="false" />
+        <activity
             android:name=".CuartoServicio"
             android:exported="false" />
         <activity
