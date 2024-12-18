@@ -23,8 +23,8 @@
         android:id="@+id/btnCalcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="144dp"
-        android:text="Button"
+        android:layout_marginBottom="228dp"
+        android:text="Calcular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -33,7 +33,7 @@
         android:id="@+id/txtLado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="220dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +45,7 @@
         android:id="@+id/txtEtiqueta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="164dp"
         android:text="Cuánto mide cada lado:"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,12 +55,11 @@
 
     <TextView
         android:id="@+id/txtRespuesta"
-        android:layout_width="209dp"
-        android:layout_height="81dp"
-        android:layout_marginBottom="304dp"
+        android:layout_width="289dp"
+        android:layout_height="123dp"
+        android:layout_marginBottom="316dp"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
