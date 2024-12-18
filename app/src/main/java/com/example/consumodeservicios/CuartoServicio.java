@@ -43,7 +43,7 @@ public class CuartoServicio extends AppCompatActivity {
 
     private void enviarNumero(String numero1, TextView txtResultado) {
         // URL del servidor
-        String url = "http://192.168.100.118:3000/sumas/" + numero1;
+        String url = "http://10.10.13.65:3000/sumas/" + numero1;
         // Crear la solicitud HTTP usando Volley
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {

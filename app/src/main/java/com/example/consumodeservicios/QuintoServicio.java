@@ -40,7 +40,7 @@ public class QuintoServicio extends AppCompatActivity {
     }
     private void enviarLado(String lado, TextView txtRespuesta) {
         // URL del servidor
-        String url = "http://192.168.100.118:3000/cuadrado/areayperimetro/" + lado;
+        String url = "http://10.10.13.65:3000/cuadrado/areayperimetro/" + lado;
         // Crear la solicitud HTTP usando Volley
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {

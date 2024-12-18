@@ -41,7 +41,7 @@ public class PrimerServicio extends AppCompatActivity {
 
     private void hacerSolicitud(final TextView txtRespuesta){
         //establecer url
-        String url = "http://192.168.100.118:3000/nombre/";
+        String url = "http://10.10.13.65:3000/nombre/";
         // Crear la solicitud HTTP usando Volley
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {

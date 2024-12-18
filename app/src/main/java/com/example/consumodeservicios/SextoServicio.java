@@ -42,7 +42,7 @@ public class SextoServicio extends AppCompatActivity {
 
     private void enviarRadio(String radio, TextView txtRespuesta) {
         // URL del servidor
-        String url = "http://192.168.100.118:3000/circulo/areayperimetro/" + radio;
+        String url = "http://10.10.13.65:3000/circulo/areayperimetro/" + radio;
         // Crear la solicitud HTTP usando Volley
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
