@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         Button btnQuintoServicio = findViewById(R.id.btnQuintoServicio);
         Button btnSextoServicio = findViewById(R.id.btnSextoServicio);
         Button btnSeptimoServicio = findViewById(R.id.btnSeptimoServicio);
+        Button btnTrinomio = findViewById(R.id.btnTrinomio);
+
         btnPrimerServicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -79,6 +81,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SeptimoServicio.class);
+                startActivity(intent);
+            }
+        });
+
+        btnTrinomio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Trinomio.class);
                 startActivity(intent);
             }
         });

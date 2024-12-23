@@ -39,17 +39,17 @@ public class PrimerServicio extends AppCompatActivity {
         });
     }
 
-    private void hacerSolicitud(final TextView txtRespuesta){
+    private void hacerSolicitud(TextView txtRespuesta){
         //establecer url
         String url = "http://10.10.13.65:3000/nombre/";
         // Crear la solicitud HTTP usando Volley
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
                     @Override
-                    public void onResponse(String response) {
+                    public void onResponse(String respuesta) { //parametro respuesta almacena la respuesta del servidor
                         try {
                             // Procesar la respuesta JSON
-                            JSONArray jsonArray = new JSONArray(response);
+                            JSONArray jsonArray = new JSONArray(respuesta);
                             StringBuilder nombres = new StringBuilder();
 
                             // Iterar sobre el JSON para obtener solo los nombres

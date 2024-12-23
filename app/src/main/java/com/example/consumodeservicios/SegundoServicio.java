@@ -37,7 +37,7 @@ public class SegundoServicio extends AppCompatActivity {
         });
     }
 
-    private void hacerSolicitud(final TextView txtRespuesta) {
+    private void hacerSolicitud(TextView txtRespuesta) {
         // URL del servidor
         String url = "http://10.10.13.65:3000/Mateo";
 
@@ -45,9 +45,9 @@ public class SegundoServicio extends AppCompatActivity {
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
                     @Override
-                    public void onResponse(String response) {
+                    public void onResponse(String respuesta) { //parametro respuesta almacena la respuesta del servidor
                         // Si la solicitud es exitosa
-                        txtRespuesta.setText(response); // Mostrar la respuesta en el TextView
+                        txtRespuesta.setText(respuesta); // Mostrar la respuesta en el TextView
                     }
                 },
                 new Response.ErrorListener() {

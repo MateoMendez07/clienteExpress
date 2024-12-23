@@ -47,8 +47,8 @@ public class SextoServicio extends AppCompatActivity {
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
                     @Override
-                    public void onResponse(String response) {
-                        txtRespuesta.setText(response);
+                    public void onResponse(String respuesta) { //parametro respuesta almacena la respuesta del servidor
+                        txtRespuesta.setText(respuesta);
                     }
                 },
                 new Response.ErrorListener() {
