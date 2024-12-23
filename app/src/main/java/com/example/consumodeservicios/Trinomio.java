@@ -44,7 +44,7 @@ public class Trinomio extends AppCompatActivity {
 
     private void enviarDatos(String numero1, String numero2, TextView txtRespuesta) {
         // URL del servidor
-        String url = "http://192.168.100.118:3000/trinomio/cuadradoPerfecto/" + numero1 + "/" + numero2;
+        String url = "http://10.10.13.65:3000/trinomio/cuadradoPerfecto/" + numero1 + "/" + numero2;
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
